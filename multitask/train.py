@@ -12,7 +12,7 @@ import torch
 import math
 import numpy as np
 
-from . import task
+import task
 
 
 print_flag = False

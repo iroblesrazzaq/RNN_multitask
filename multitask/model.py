@@ -2,7 +2,7 @@
 
 import torch
 from torch import nn, jit
-from .train import generate_trials as gen_trials
+from train import generate_trials as gen_trials
 
 class Model(nn.Module):
     def __init__(self, hp, RNNLayer): 

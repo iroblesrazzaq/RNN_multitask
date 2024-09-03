@@ -5,8 +5,8 @@ from __future__ import division
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
-from .task import rule_name 
-from . import tools
+from task import rule_name 
+import tools
 
 def easy_activity_plot(model, rule):
     """A simple plot of neural activity from one task.
