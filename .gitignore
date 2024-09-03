@@ -1,3 +1,7 @@
+*.ipynb
+*analysis_orig/
+
+# All previous stuff below
 .DS_Store
 
 # Byte-compiled / optimized / DLL files
