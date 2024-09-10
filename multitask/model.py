@@ -46,9 +46,10 @@ class Run_Model(nn.Module): #(jit.ScriptModule):
         return loss, loss_reg
     
 #     @jit.script_method
-    def forward(self, rule, batch_size = None, mode = 'random'): #, **kwargs):
-        hp             = self.hp        
-        trial          = self.generate_trials(rule, hp, mode, batch_size)
+    def forward(self, rule, batch_size = None, mode = 'random', trial=None): #, **kwargs):
+        hp             = self.hp   
+        if not trial:     
+            trial = self.generate_trials(rule, hp, mode, batch_size)
         output, hidden = self.model(trial.x)
         loss, loss_reg = self.calculate_loss(output, hidden, trial, hp)
         return loss, loss_reg, output.detach().cpu().numpy(), hidden.detach().cpu().numpy(), trial
