@@ -3,7 +3,7 @@
 multitask/analysis_orig/*
 !multitask/analysis_orig/variance.py
 
-
+!notebook.ipynb
 
 # All previous stuff below
 .DS_Store
