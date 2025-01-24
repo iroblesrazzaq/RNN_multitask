@@ -1,5 +1,9 @@
 *.ipynb
-*analysis_orig/
+!multitask/analysis_orig/
+multitask/analysis_orig/*
+!multitask/analysis_orig/variance.py
+
+
 
 # All previous stuff below
 .DS_Store

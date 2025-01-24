@@ -1566,7 +1566,7 @@ def generate_trials(rule, hp, mode, noise_on=True, **kwargs):
         rule: str, the rule for this batch
         hp: dictionary of hyperparameters
         mode: str, the mode of generating. Options: random, test, psychometric
-        noise_on: bool, whether input noise is given
+        noise_on: bool, whether input noise is given`
 
     Return:
         trial: Trial class instance, containing input and target output
